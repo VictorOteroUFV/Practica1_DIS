@@ -1,0 +1,35 @@
+<!DOCTYPE pedidos
+[
+<!ELEMENT pedidos (cantidad, cliente, destinatario, direccion_entrega, fecha_entrega, productos)*>
+<!ELEMENT cantidad (#PCDATA)*>
+<!ELEMENT cliente (apellido, direccion, email, nombre, numero_telefono)>
+<!ELEMENT apellido (#PCDATA)>
+<!ELEMENT direccion (calle, codigo_postal, numero, pais, poblacion)>
+<!ELEMENT calle (#PCDATA)>
+<!ELEMENT codigo_postal (#PCDATA)>
+<!ELEMENT numero (#PCDATA)>
+<!ELEMENT pais (#PCDATA)>
+<!ELEMENT poblacion (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT numero_telefono (#PCDATA)>
+<!ELEMENT destinatario (#PCDATA)>
+<!ELEMENT direccion_entrega (calle, codigo_postal, numero, pais, poblacion)>
+<!ELEMENT calle (#PCDATA)>
+<!ELEMENT codigo_postal (#PCDATA)>
+<!ELEMENT numero (#PCDATA)>
+<!ELEMENT pais (#PCDATA)>
+<!ELEMENT poblacion (#PCDATA)>
+<!ELEMENT fecha_entrega (#PCDATA)>
+<!ELEMENT productos (codigo, descripcion, localizacion, nombre, pendiente, stock)*>
+<!ELEMENT codigo (#PCDATA)>
+<!ELEMENT descripcion (#PCDATA)>
+<!ELEMENT localizacion (estante, estanteria, pasillo)>
+<!ELEMENT estante (#PCDATA)>
+<!ELEMENT estanteria (#PCDATA)>
+<!ELEMENT pasillo (#PCDATA)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT pendiente (#PCDATA)>
+<!ELEMENT stock (#PCDATA)>
+]
+>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE pedidos SYSTEM "pedidos.dtd" >
+<pedidos>
+    <cantidad>1</cantidad>
+    <cliente>
+        <apellido>a</apellido>
+        <direccion>
+            <calle>a</calle>
+            <codigo_postal>1</codigo_postal>
+            <numero>1</numero>
+            <pais>a</pais>
+            <poblacion>1</poblacion>
+        </direccion>
+        <email>a</email>
+        <nombre>a</nombre>
+        <numero_telefono>1</numero_telefono>
+    </cliente>
+    <destinatario>a</destinatario>
+    <direccion_entrega>
+        <calle>a</calle>
+        <codigo_postal>1</codigo_postal>
+        <numero>1</numero>
+        <pais>a</pais>
+        <poblacion>1</poblacion>
+    </direccion_entrega>
+    <fecha_entrega>2020-03-13T17:13:55.386+01:00</fecha_entrega>
+    <productos>
+        <codigo>1</codigo>
+        <descripcion>a</descripcion>
+        <localizacion>
+            <estante>1</estante>
+            <estanteria>2</estanteria>
+            <pasillo>1</pasillo>
+        </localizacion>
+        <nombre>a</nombre>
+        <pendiente>1</pendiente>
+        <stock>1</stock>
+    </productos>
+</pedidos>

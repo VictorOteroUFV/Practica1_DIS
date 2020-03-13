@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE EjemploconDTD SYSTEM "pedidos.dtd" >
+<pedidos>
+    <cantidad>1</cantidad>
+    <cantidad>1</cantidad>
+    <cliente>
+        <apellido>1</apellido>
+        <direccion>
+            <calle>1</calle>
+            <codigo_postal>1</codigo_postal>
+            <numero>1</numero>
+            <pais>1</pais>
+            <poblacion>1</poblacion>
+        </direccion>
+        <email>1</email>
+        <nombre>1</nombre>
+        <numero_telefono>1</numero_telefono>
+    </cliente>
+    <destinatario>1</destinatario>
+    <direccion_entrega>
+        <calle>1</calle>
+        <codigo_postal>1</codigo_postal>
+        <numero>1</numero>
+        <pais>1</pais>
+        <poblacion>1</poblacion>
+    </direccion_entrega>
+    <fecha_entrega>2020-03-13T17:01:14.248+01:00</fecha_entrega>
+    <productos>
+        <codigo>1</codigo>
+        <descripcion>1</descripcion>
+        <localizacion>
+            <estante>1</estante>
+            <estanteria>1</estanteria>
+            <pasillo>1</pasillo>
+        </localizacion>
+        <nombre>1</nombre>
+        <pendiente>1</pendiente>
+        <stock>1</stock>
+    </productos>
+    <productos>
+        <codigo>1</codigo>
+        <descripcion>1</descripcion>
+        <localizacion>
+            <estante>1</estante>
+            <estanteria>1</estanteria>
+            <pasillo>1</pasillo>
+        </localizacion>
+        <nombre>1</nombre>
+        <pendiente>1</pendiente>
+        <stock>1</stock>
+    </productos>
+</pedidos>
