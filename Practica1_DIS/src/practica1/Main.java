@@ -4,12 +4,14 @@ import java.io.BufferedReader;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.io.File;//
 import java.util.ArrayList;
 import java.util.Calendar;
 
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
-import javax.xml.bind.Marshaller;  
+import javax.xml.bind.Marshaller;
+import javax.xml.bind.Unmarshaller;//
 
 public class Main {
 
@@ -178,7 +180,21 @@ public class Main {
 			
 			
 			else if(opcion == 2) {																								//Segunda opcion de recuperar pedido
-					
+				File xmlfile = new File("pedidos.xml");
+				JAXBContext jaxbContext;
+				try
+				{
+					jaxbContext = JAXBContext.newInstance(Pedidos.class);
+					Unmarshaller jaxbUnmarshaller = jaxbContext.createUnmarshaller();
+					Pedidos pedidosxml = (Pedidos)jaxbUnmarshaller.unmarshal(xmlfile);
+					System.out.println("Informacion del pedido almacenado");
+					System.out.println(pedidosxml);
+					System.out.println(" ");
+				}
+				catch (JAXBException e) 
+		        {
+		            e.printStackTrace();
+		        }
 			}
 			
 			
@@ -192,7 +208,6 @@ public class Main {
 				    	marshallerObj.marshal(pedidos.get(0), new FileOutputStream("pedidos.xml"));  
 					
 					} catch (JAXBException e) {
-						// TODO Auto-generated catch block
 						e.printStackTrace();
 					}
 					System.out.println("Pedido guardado correctamente\n");
